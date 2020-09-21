@@ -18,7 +18,6 @@ class Header extends Component {
                 <h3>{this.props.month}</h3>
                 <br/>
                 </header>
-                
             );
         }
     }

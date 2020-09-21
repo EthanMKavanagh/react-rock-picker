@@ -7,6 +7,7 @@ class MonthList extends Component {
             <ul>
                 {this.props.calendar.map(monthItem => 
                     <MonthItem
+                        key={monthItem.id}
                         id={monthItem.id}
                         month={monthItem.name}
                         onMonthClick={this.props.onMonthClick}
