@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './App.css';
 import MonthList from '../MonthList/MonthList';
+import Header from '../Header/Header';
 
 class App extends Component {
 
   state = {
-    calendar: []
+    calendar: [],
+    month: ''
   }
 
   componentDidMount = () => {
@@ -28,17 +30,22 @@ class App extends Component {
     })
   }
 
+  onMonthClick = (month) => {
+    this.setState({
+      month: month
+    });
+  }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Select a Month</h1>
-          <h3>SELECTED MONTH GOES HERE</h3>
-          <br/>
-        </header>
+        <Header
+          month={this.state.month}
+        />
         <br/>
         <MonthList 
           calendar={this.state.calendar}
+          onMonthClick={this.onMonthClick}
         />
       </div>
     );

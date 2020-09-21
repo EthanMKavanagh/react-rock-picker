@@ -9,6 +9,7 @@ class MonthList extends Component {
                     <MonthItem
                         id={monthItem.id}
                         month={monthItem.name}
+                        onMonthClick={this.props.onMonthClick}
                     />
                 )}
             </ul>

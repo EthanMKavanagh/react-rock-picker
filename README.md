@@ -37,7 +37,7 @@ This app will display a list of months on the page. When a month is clicked, it 
 
 ## STRETCH FEATURE
 
-- Move the header into it's own component, `Header`, as a child of App. `Header` should display the month that was just clicked. Keep the data in App.js. You will have to get the data from the `MonthItem` "up" to `App` and then into `Header`.
+- [ ] Move the header into it's own component, `Header`, as a child of App. `Header` should display the month that was just clicked. Keep the data in App.js. You will have to get the data from the `MonthItem` "up" to `App` and then into `Header`.
 
 ### Stretch Mode Mockup
 
